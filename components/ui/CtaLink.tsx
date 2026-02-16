@@ -41,7 +41,7 @@ export default function CtaLink({ button, className, fallbackLabel }: CtaLinkPro
   }
 
   return (
-    <Link className={className} href={href} aria-label={ariaLabel}>
+    <Link className={className} href={href} prefetch={false} aria-label={ariaLabel}>
       <span>{label}</span>
     </Link>
   );

@@ -123,7 +123,7 @@ export default function Header({ global }: HeaderProps) {
       className={`${styles["site-header"]} ${hidden ? styles["site-header--hidden"] : ""} ${solid ? styles["site-header--solid"] : ""}`}
     >
       <div className={styles["site-header__inner"]}>
-        <Link className={styles["site-header__logo-link"]} href="/" aria-label="Home" onClick={closeMenu}>
+        <Link className={styles["site-header__logo-link"]} href="/" prefetch={false} aria-label="Home" onClick={closeMenu}>
           <Image
             src={global.logo.src}
             alt={global.logo.alt}
@@ -144,7 +144,7 @@ export default function Header({ global }: HeaderProps) {
               return (
                 <li key={`${item.path}-${item.label}`} className={styles["site-header__nav-item"]}>
                   <div className={styles["site-header__nav-link-wrap"]}>
-                    <Link className={styles["site-header__nav-link"]} href={item.path}>
+                    <Link className={styles["site-header__nav-link"]} href={item.path} prefetch={false}>
                       {item.label}
                     </Link>
                     {hasVisualCaret ? (
@@ -163,6 +163,7 @@ export default function Header({ global }: HeaderProps) {
                           key={`${child.path}-${child.hash || ""}-${child.label}`}
                           className={styles["site-header__subnav-link"]}
                           href={buildHref(child.path, child.hash)}
+                          prefetch={false}
                         >
                           {child.label}
                         </Link>
@@ -206,7 +207,7 @@ export default function Header({ global }: HeaderProps) {
 
                 return (
                   <li key={`${item.path}-${item.label}`} className={styles["site-header__nav-item"]}>
-                    <Link className={styles["site-header__nav-link"]} href={item.path} onClick={closeMenu}>
+                    <Link className={styles["site-header__nav-link"]} href={item.path} prefetch={false} onClick={closeMenu}>
                       {item.label}
                     </Link>
                     {childLinks.length ? (
@@ -216,6 +217,7 @@ export default function Header({ global }: HeaderProps) {
                             <Link
                               className={styles["site-header__mobile-subnav-link"]}
                               href={buildHref(child.path, child.hash)}
+                              prefetch={false}
                               onClick={closeMenu}
                             >
                               {child.label}
