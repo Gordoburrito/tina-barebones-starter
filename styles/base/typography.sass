@@ -1,0 +1,36 @@
+body
+  background: var(--color-bg1)
+  color: var(--color-text)
+  font-family: var(--font-body), var(--font-body-fallback), sans-serif
+  font-size: 1rem
+  letter-spacing: 0.0225em
+  line-height: 1.67
+  font-feature-settings: "lnum"
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: var(--font-heading), var(--font-heading-fallback), sans-serif
+  line-height: 1.1
+  margin: 0
+
+a
+  color: inherit
+  text-decoration: none
+
+button
+  font: inherit
+
+@media screen and (min-width: 1600px)
+  body
+    font-size: 1.125rem
+
+@media screen and (max-width: 480px)
+  body
+    font-size: 0.875rem

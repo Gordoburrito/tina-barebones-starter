@@ -1,0 +1,227 @@
+{
+  "title": "Home",
+  "slug": "home",
+  "seoTitle": "Home Page",
+  "seoDescription": "Meta Description",
+  "sections": [
+    {
+      "_template": "hero",
+      "sectionId": "hero-0",
+      "title": "Stinson Orthodontics",
+      "bodyText": "",
+      "mediaImage": "/uploads/stinson/home/hero-home.jpg",
+      "mediaAlt": "Smiling woman at sunset.",
+      "button": {
+        "label": "Schedule Consultation",
+        "path": "/contact",
+        "hash": "#form",
+        "ariaLabel": "Contact us and schedule a consultation",
+        "style": "primary"
+      }
+    },
+    {
+      "_template": "block_text_fh",
+      "sectionId": "block_text_fh-1",
+      "title": "You're in the right place.",
+      "paragraphs": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
+    },
+    {
+      "_template": "multi_item_row",
+      "sectionId": "multi_item_row-2",
+      "title": "Why Choose Us",
+      "items": [
+        {
+          "title": "Advanced Technology",
+          "icon": "tooth-check",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "title": "Expert Doctor",
+          "icon": "tooth-stars",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        },
+        {
+          "title": "Comfortable Setting",
+          "icon": "tooth-two-v1",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+      ],
+      "cta": {
+        "label": "learn more",
+        "path": "/about",
+        "hash": "",
+        "ariaLabel": "learn more on the about page",
+        "style": "secondary"
+      }
+    },
+    {
+      "_template": "image_text",
+      "sectionId": "image_text-3",
+      "title": "You're in good hands.",
+      "paragraphs": [
+        {
+          "heading": "",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ],
+      "image": "/uploads/stinson/home/home-doctor.jpg",
+      "imageAlt": "Example Doctor smiling.",
+      "reverse": false,
+      "buttons": [
+        {
+          "label": "meet the doctor",
+          "path": "/about",
+          "hash": "#meet-the-doctor",
+          "ariaLabel": "links to the meet the doctor section on the about page",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "_template": "block_masonary_grid",
+      "sectionId": "block_masonary_grid-4",
+      "title": "Find the treatment that's right for you.",
+      "introParagraphs": [
+        {
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ],
+      "items": [
+        {
+          "title": "Retainers",
+          "image": "/uploads/stinson/home/home-treatment-1.jpg",
+          "imageAlt": "Retainers",
+          "path": "/treatments",
+          "hash": "#retainers"
+        },
+        {
+          "title": "Treatment for all Ages",
+          "image": "/uploads/stinson/home/home-treatment-2.jpg",
+          "imageAlt": "treatments",
+          "path": "/treatments",
+          "hash": "#early-treatment"
+        },
+        {
+          "title": "Invisalign",
+          "image": "/uploads/stinson/home/home-treatment-3.jpg",
+          "imageAlt": "invisalign",
+          "path": "/treatments",
+          "hash": "#invisalign"
+        },
+        {
+          "title": "Braces",
+          "image": "/uploads/stinson/home/home-treatment-4.jpg",
+          "imageAlt": "braces",
+          "path": "/treatments",
+          "hash": "#braces"
+        }
+      ],
+      "cta": {
+        "label": "learn more",
+        "path": "/treatments",
+        "hash": "",
+        "ariaLabel": "learn more on the treatments page",
+        "style": "primary"
+      }
+    },
+    {
+      "_template": "multi_item_testimonial",
+      "sectionId": "multi_item_testimonial-5",
+      "title": "What our clients are saying.",
+      "reviewText": "Leave us a Review!",
+      "reviewLinks": [
+        {
+          "icon": "google",
+          "href": "https://g.page/RoosterGrin?share",
+          "ariaLabel": "Review on google"
+        },
+        {
+          "icon": "yelp",
+          "href": "https://www.yelp.com/biz/rooster-grin-san-francisco?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)",
+          "ariaLabel": "Review on yelp"
+        }
+      ],
+      "testimonials": [
+        {
+          "author": "Author Name",
+          "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation."
+        },
+        {
+          "author": "Second Author",
+          "testimonial": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "author": "Another Author",
+          "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    },
+    {
+      "_template": "multi_use_banner",
+      "sectionId": "multi_use_banner-6",
+      "variant": "social_block",
+      "title": "Follow us on social media",
+      "text": "",
+      "socialLinks": [
+        {
+          "icon": "facebook",
+          "href": "/#",
+          "ariaLabel": "Follow us on facebook"
+        },
+        {
+          "icon": "twitter",
+          "href": "/#",
+          "ariaLabel": "Follow us on twitter"
+        },
+        {
+          "icon": "instagram",
+          "href": "/#",
+          "ariaLabel": "Follow us on instagram"
+        }
+      ],
+      "button": {
+        "label": "",
+        "path": "",
+        "hash": "",
+        "ariaLabel": "",
+        "style": "primary"
+      },
+      "backgroundMode": "has_image",
+      "backgroundColor": "",
+      "backgroundImage": "/uploads/stinson/home/home-banner.jpg",
+      "backgroundImageAlt": "",
+      "centered": false,
+      "largeTitle": false,
+      "textColor": ""
+    },
+    {
+      "_template": "multi_use_banner",
+      "sectionId": "multi_use_banner-7",
+      "variant": "text_block",
+      "title": "Let's get started!",
+      "text": "",
+      "socialLinks": [],
+      "button": {
+        "label": "Schedule Consultation",
+        "path": "/contact",
+        "hash": "#form",
+        "ariaLabel": "schedule consultation on the contact page",
+        "style": "primary"
+      },
+      "backgroundMode": "has_background",
+      "backgroundColor": "bg2",
+      "backgroundImage": "",
+      "backgroundImageAlt": "",
+      "centered": true,
+      "largeTitle": true,
+      "textColor": "primary"
+    }
+  ]
+}

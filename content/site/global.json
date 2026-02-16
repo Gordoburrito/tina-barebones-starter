@@ -1,0 +1,146 @@
+{
+  "companyName": "Stinson Orthodontics",
+  "email": "info@roostergrin.com",
+  "phoneNumber": "415-528-2520",
+  "phoneHref": "tel:+14155282520",
+  "phoneAria": "4 1 5, 5 2 8, 2 5 2 0",
+  "logo": {
+    "src": "/uploads/stinson/home/stinson-logo.svg",
+    "alt": "Stinson Orthodontics"
+  },
+  "primaryCta": {
+    "label": "Schedule Consultation",
+    "path": "/contact",
+    "hash": "#form",
+    "ariaLabel": "schedule consultation on the contact page",
+    "style": "primary"
+  },
+  "navLinks": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "About",
+      "path": "/about"
+    },
+    {
+      "label": "Treatments",
+      "path": "/treatments",
+      "children": [
+        {
+          "label": "Early Treatment",
+          "path": "/treatments",
+          "hash": "#early-treatment"
+        },
+        {
+          "label": "Adult Treatment",
+          "path": "/treatments",
+          "hash": "#adult-treatment"
+        },
+        {
+          "label": "Braces",
+          "path": "/treatments",
+          "hash": "#braces"
+        },
+        {
+          "label": "Invisalign",
+          "path": "/treatments",
+          "hash": "#invisalign"
+        },
+        {
+          "label": "Orthognathic Surgery",
+          "path": "/treatments",
+          "hash": "#orthognathic-surgery"
+        },
+        {
+          "label": "Retainers",
+          "path": "/treatments",
+          "hash": "#retainers"
+        },
+        {
+          "label": "Technology",
+          "path": "/treatments",
+          "hash": "#technology"
+        }
+      ]
+    },
+    {
+      "label": "Get Started",
+      "path": "/get-started"
+    },
+    {
+      "label": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "footerLinks": [
+    {
+      "label": "Privacy Policy",
+      "path": "/privacy-policy",
+      "hash": "",
+      "external": false
+    }
+  ],
+  "socialLinks": [
+    {
+      "icon": "facebook",
+      "href": "/#",
+      "ariaLabel": "Follow us on facebook"
+    },
+    {
+      "icon": "twitter",
+      "href": "/#",
+      "ariaLabel": "Follow us on twitter"
+    },
+    {
+      "icon": "instagram",
+      "href": "/#",
+      "ariaLabel": "Follow us on instagram"
+    }
+  ],
+  "location": {
+    "street": "575 Sutter St.",
+    "suite": "Suite 503",
+    "cityState": "San Francisco, CA 94102",
+    "latitude": "37.7888261",
+    "longitude": "-122.4096941",
+    "directionsHref": "https://g.page/RoosterGrin?share",
+    "directionsLabel": "Get Directions",
+    "locationEmail": "info@stinson.com",
+    "hours": [
+      {
+        "day": "Mon",
+        "time": "9 - 6"
+      },
+      {
+        "day": "Tues - Thurs",
+        "time": "9 - 5"
+      },
+      {
+        "day": "Fri",
+        "time": "10 - 5"
+      },
+      {
+        "day": "Sat - Sun",
+        "time": "Closed"
+      }
+    ]
+  },
+  "theme": {
+    "colors": {
+      "primary": "#1c79a0",
+      "accent": "#ed6a40",
+      "text": "#272727",
+      "bg1": "#fafafa",
+      "bg2": "#eef6f8",
+      "secondary": "#13526e"
+    },
+    "fonts": {
+      "body": "'Open Sans', helvetica, arial, sans-serif",
+      "heading": "'Archivo', sans-serif"
+    }
+  },
+  "accessibilityLinkLabel": "Accessibility Statement",
+  "copyright": "© 2026 Stinson Orthodontics"
+}

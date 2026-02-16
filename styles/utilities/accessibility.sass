@@ -1,0 +1,28 @@
+[id]
+  scroll-margin-top: 7rem
+
+:focus-visible
+  outline: 2px dashed var(--color-accent)
+  outline-offset: 3px
+
+.skip-link
+  left: 0.8rem
+  position: fixed
+  top: 0.8rem
+  transform: translateY(-170%)
+  transition: transform 0.2s ease
+  z-index: 1000
+
+.skip-link:focus-visible,
+.skip-link:focus-within
+  transform: translateY(0)
+
+.skip-link__button
+  background: #000
+  border: 0
+  border-radius: 0.35rem
+  color: #fff
+  font-size: 0.78rem
+  letter-spacing: 0.04em
+  padding: 0.62rem 0.95rem
+  text-transform: uppercase

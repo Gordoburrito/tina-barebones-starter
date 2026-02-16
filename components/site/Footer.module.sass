@@ -1,0 +1,126 @@
+.site-footer
+  background: var(--color-secondary)
+  padding: 4rem 0
+  color: #fff
+
+.site-footer__inner
+  max-width: 1344px
+  margin: 0 auto
+  padding: 0 16px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.site-footer__top-row
+  width: 100%
+  margin-bottom: 1.25rem
+
+.site-footer__menu
+  display: flex
+  flex-wrap: wrap
+  gap: 0
+  list-style: none
+  margin: 0
+  padding: 0
+
+.site-footer__menu-item
+  margin: 0
+.site-footer__menu-item:not(:last-child)
+  margin-right: 2vw
+
+.site-footer__link
+  color: inherit
+  font-size: 0.9375rem
+  font-weight: 600
+  text-decoration: none
+
+.site-footer__link:hover
+  text-decoration: underline
+  text-underline-offset: 4px
+
+.site-footer__bottom-row
+  width: 100%
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+  gap: 1rem
+
+.site-footer__meta
+  display: flex
+  flex-wrap: wrap
+  padding-top: 1.5rem
+
+.site-footer__meta > *
+  line-height: 1
+  margin: 0
+  margin-right: 1vw
+  margin-top: 1rem
+  position: relative
+  font-size: 0.9375rem
+
+.site-footer__meta > *:not(:last-child)
+  border-right: 1px solid rgba(255, 255, 255, 0.8)
+  padding-right: 1vw
+
+.site-footer__social-list
+  list-style: none
+  margin: 0
+  padding: 0
+  display: flex
+  gap: 0.5rem
+
+.site-footer__social-list-item
+  margin: 0
+
+.site-footer__social-link
+  color: #fff
+  display: flex
+  align-items: center
+  height: 2.75rem
+  justify-content: center
+  transition: color 0.2s ease
+  width: 2.75rem
+
+.site-footer__social-link:hover .site-footer__social-icon
+  color: var(--color-accent)
+
+.site-footer__social-icon
+  width: 1.5rem
+  height: 1.5rem
+
+@media (max-width: 900px)
+  .site-footer__bottom-row
+    flex-direction: column
+    align-items: flex-start
+
+  .site-footer__meta
+    padding-top: 0.5rem
+
+@media (min-width: 1600px)
+  .site-footer__inner
+    max-width: 1536px
+
+@media (max-width: 768px)
+  .site-footer__inner
+    padding: 0 2rem
+
+@media (max-width: 600px)
+  .site-footer__menu
+    display: block
+
+  .site-footer__menu-item:not(:last-child)
+    margin-bottom: 1rem
+
+  .site-footer__meta
+    flex-direction: column-reverse
+
+  .site-footer__meta > *
+    margin-right: 0
+
+  .site-footer__meta > *:not(:last-child)
+    border-right: 0
+    padding-right: 0
+
+@media (max-width: 480px)
+  .site-footer__inner
+    padding: 0 1rem

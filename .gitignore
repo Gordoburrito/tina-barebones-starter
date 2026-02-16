@@ -23,6 +23,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
+*.pid
+*.seed
+
+# local tooling artifacts
+.playwright-cli/
+/output/
+/.turbo/
+/.cache/
 
 # local env files
 .env
