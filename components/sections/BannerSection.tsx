@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { BannerSectionData } from "../../types/site";
 import CtaLink from "../ui/CtaLink";
 import Icon from "../ui/Icon";
+import { resolveStinsonMediaSrc } from "../ui/media";
 import styles from "./BannerSection.module.sass";
 
 interface BannerSectionProps {
@@ -28,7 +29,7 @@ export default function BannerSection({ section }: BannerSectionProps) {
   const style: Record<string, string> = {};
   const backgroundImage =
     section.backgroundMode === "has_image" && typeof section.backgroundImage === "string"
-      ? section.backgroundImage
+      ? resolveStinsonMediaSrc(section.backgroundImage)
       : undefined;
   const hasImageBackground = Boolean(backgroundImage);
 

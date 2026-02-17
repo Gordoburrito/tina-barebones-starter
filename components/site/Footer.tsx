@@ -34,7 +34,7 @@ export default function Footer({ global }: FooterProps) {
 
               return (
                 <li key={`${item.label}-${href}`} className={styles["site-footer__menu-item"]}>
-                  <Link className={styles["site-footer__link"]} href={href}>
+                  <Link className={styles["site-footer__link"]} href={href} prefetch={false}>
                     {item.label}
                   </Link>
                 </li>
@@ -57,7 +57,7 @@ export default function Footer({ global }: FooterProps) {
                 Rooster Grin Media
               </a>
             </p>
-            <Link className={styles["site-footer__link"]} href="/accessibility">
+            <Link className={styles["site-footer__link"]} href="/accessibility" prefetch={false}>
               {global.accessibilityLinkLabel}
             </Link>
             <span className={styles["site-footer__link"]} tabIndex={0} role="button" aria-label="Click for Accessibility">

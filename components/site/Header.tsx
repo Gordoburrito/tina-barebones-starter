@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { SiteGlobal, SiteSubLink } from "../../types/site";
 import CtaLink from "../ui/CtaLink";
+import { resolveStinsonMediaSrc } from "../ui/media";
 import styles from "./Header.module.sass";
 
 interface HeaderProps {
@@ -125,7 +126,7 @@ export default function Header({ global }: HeaderProps) {
       <div className={styles["site-header__inner"]}>
         <Link className={styles["site-header__logo-link"]} href="/" prefetch={false} aria-label="Home" onClick={closeMenu}>
           <Image
-            src={global.logo.src}
+            src={resolveStinsonMediaSrc(global.logo.src)}
             alt={global.logo.alt}
             width={178}
             height={84}

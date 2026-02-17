@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { HeroSectionData } from "../../types/site";
 import CtaLink from "../ui/CtaLink";
+import { resolveStinsonMediaSrc } from "../ui/media";
 import styles from "./HeroSection.module.sass";
 
 interface HeroSectionProps {
@@ -20,7 +21,14 @@ export default function HeroSection({ section }: HeroSectionProps) {
       <div className={styles["hero__overlay"]} />
 
       <div className={styles["hero__image-wrap"]}>
-        <Image src={section.mediaImage} alt={section.mediaAlt} fill priority sizes="100vw" className={styles["hero__image"]} />
+        <Image
+          src={resolveStinsonMediaSrc(section.mediaImage)}
+          alt={section.mediaAlt}
+          fill
+          priority
+          sizes="100vw"
+          className={styles["hero__image"]}
+        />
       </div>
 
       <div className={styles["hero__container"]}>

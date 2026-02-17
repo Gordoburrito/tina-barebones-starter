@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { MasonryGridSectionData } from "../../types/site";
 import CtaLink from "../ui/CtaLink";
+import { resolveStinsonMediaSrc } from "../ui/media";
 import styles from "./MasonryGridSection.module.sass";
 
 interface MasonryGridSectionProps {
@@ -66,13 +67,14 @@ export default function MasonryGridSection({ section }: MasonryGridSectionProps)
               <Link
                 key={`${item.path}-${item.title}-${index}`}
                 href={href}
+                prefetch={false}
                 className={styles["masonry-grid__tile"]}
                 data-reveal="fade"
                 data-reveal-delay={`${120 + index * 70}`}
               >
                 <div className={styles["masonry-grid__tile-image-wrap"]}>
                   <Image
-                    src={item.image}
+                    src={resolveStinsonMediaSrc(item.image)}
                     alt={item.imageAlt}
                     fill
                     sizes="(max-width: 768px) 100vw, 35vw"

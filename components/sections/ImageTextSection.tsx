@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ImageTextSectionData } from "../../types/site";
 import CtaLink from "../ui/CtaLink";
+import { resolveStinsonMediaSrc } from "../ui/media";
 import styles from "./ImageTextSection.module.sass";
 
 interface ImageTextSectionProps {
@@ -16,7 +17,7 @@ export default function ImageTextSection({ section }: ImageTextSectionProps) {
         <div className={styles["image-text__media-col"]}>
           <div className={styles["image-text__media-wrap"]} data-reveal="fade">
             <Image
-              src={section.image}
+              src={resolveStinsonMediaSrc(section.image)}
               alt={section.imageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 45vw"
