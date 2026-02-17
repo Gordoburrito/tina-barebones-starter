@@ -49,6 +49,188 @@ const socialLinkFields = [
   },
 ];
 
+const contactFormFieldTemplates = [
+  {
+    name: "input_field",
+    label: "Input Field",
+    fields: [
+      {
+        type: "string",
+        name: "fieldId",
+        label: "Field ID",
+      },
+      {
+        type: "string",
+        name: "label",
+        label: "Label",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "name",
+        label: "Name",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "inputType",
+        label: "Input Type",
+        options: ["text", "email", "tel"],
+        required: true,
+      },
+      {
+        type: "string",
+        name: "placeholder",
+        label: "Placeholder",
+      },
+      {
+        type: "boolean",
+        name: "required",
+        label: "Required",
+      },
+      {
+        type: "string",
+        name: "width",
+        label: "Width",
+        options: ["full", "half"],
+      },
+      {
+        type: "string",
+        name: "autoComplete",
+        label: "Autocomplete",
+      },
+    ],
+  },
+  {
+    name: "textarea_field",
+    label: "Textarea Field",
+    fields: [
+      {
+        type: "string",
+        name: "fieldId",
+        label: "Field ID",
+      },
+      {
+        type: "string",
+        name: "label",
+        label: "Label",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "name",
+        label: "Name",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "placeholder",
+        label: "Placeholder",
+      },
+      {
+        type: "boolean",
+        name: "required",
+        label: "Required",
+      },
+      {
+        type: "number",
+        name: "rows",
+        label: "Rows",
+      },
+      {
+        type: "string",
+        name: "width",
+        label: "Width",
+        options: ["full", "half"],
+      },
+    ],
+  },
+  {
+    name: "checkbox_group",
+    label: "Checkbox Group",
+    fields: [
+      {
+        type: "string",
+        name: "fieldId",
+        label: "Field ID",
+      },
+      {
+        type: "string",
+        name: "label",
+        label: "Legend Label",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "name",
+        label: "Name",
+        required: true,
+      },
+      {
+        type: "boolean",
+        name: "required",
+        label: "Required",
+      },
+      {
+        type: "object",
+        name: "options",
+        label: "Options",
+        list: true,
+        fields: [
+          {
+            type: "string",
+            name: "label",
+            label: "Label",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "value",
+            label: "Value",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "defaultChecked",
+            label: "Checked by Default",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "consent_checkbox",
+    label: "Consent Checkbox",
+    fields: [
+      {
+        type: "string",
+        name: "fieldId",
+        label: "Field ID",
+      },
+      {
+        type: "string",
+        name: "name",
+        label: "Name",
+        required: true,
+      },
+      {
+        type: "string",
+        name: "label",
+        label: "Consent Text",
+        required: true,
+        ui: {
+          component: "textarea",
+        },
+      },
+      {
+        type: "boolean",
+        name: "required",
+        label: "Required",
+      },
+    ],
+  },
+];
+
 /**
  * @type {import('tinacms').Collection}
  */
@@ -417,6 +599,49 @@ export default {
                   },
                 },
               ],
+            },
+          ],
+        },
+        {
+          name: "contact_form",
+          label: "Contact Form",
+          fields: [
+            {
+              type: "string",
+              name: "sectionId",
+              label: "Section ID",
+            },
+            {
+              type: "string",
+              name: "title",
+              label: "Title",
+              required: true,
+            },
+            {
+              type: "string",
+              name: "introText",
+              label: "Intro Text",
+              ui: {
+                component: "textarea",
+              },
+            },
+            {
+              type: "string",
+              name: "formAriaLabel",
+              label: "Form aria-label",
+            },
+            {
+              type: "string",
+              name: "submitLabel",
+              label: "Submit Label",
+              required: true,
+            },
+            {
+              type: "object",
+              name: "formFields",
+              label: "Form Fields",
+              list: true,
+              templates: contactFormFieldTemplates,
             },
           ],
         },

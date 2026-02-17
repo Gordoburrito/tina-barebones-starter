@@ -151,6 +151,68 @@ export interface TestimonialSectionData {
   testimonials: TestimonialItem[];
 }
 
+export interface ContactFormInputField {
+  _template: "input_field";
+  fieldId?: string;
+  label: string;
+  name: string;
+  inputType: "text" | "email" | "tel";
+  placeholder?: string;
+  required?: boolean;
+  width?: "full" | "half";
+  autoComplete?: string;
+}
+
+export interface ContactFormTextareaField {
+  _template: "textarea_field";
+  fieldId?: string;
+  label: string;
+  name: string;
+  placeholder?: string;
+  required?: boolean;
+  rows?: number;
+  width?: "full" | "half";
+}
+
+export interface ContactFormCheckboxOption {
+  label: string;
+  value: string;
+  defaultChecked?: boolean;
+}
+
+export interface ContactFormCheckboxGroupField {
+  _template: "checkbox_group";
+  fieldId?: string;
+  label: string;
+  name: string;
+  required?: boolean;
+  options: ContactFormCheckboxOption[];
+}
+
+export interface ContactFormConsentCheckboxField {
+  _template: "consent_checkbox";
+  fieldId?: string;
+  name: string;
+  label: string;
+  required?: boolean;
+}
+
+export type ContactFormField =
+  | ContactFormInputField
+  | ContactFormTextareaField
+  | ContactFormCheckboxGroupField
+  | ContactFormConsentCheckboxField;
+
+export interface ContactFormSectionData {
+  _template: "contact_form";
+  sectionId?: string;
+  title: string;
+  introText?: string;
+  formAriaLabel?: string;
+  submitLabel: string;
+  formFields: ContactFormField[];
+}
+
 export interface BannerSectionData {
   _template: "multi_use_banner";
   sectionId?: string;
@@ -175,6 +237,7 @@ export type HomeSection =
   | ImageTextSectionData
   | MasonryGridSectionData
   | TestimonialSectionData
+  | ContactFormSectionData
   | BannerSectionData;
 
 export interface HomePage {

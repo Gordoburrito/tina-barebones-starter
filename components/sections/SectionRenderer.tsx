@@ -1,5 +1,6 @@
 import type { HomeSection } from "../../types/site";
 import BannerSection from "./BannerSection";
+import ContactFormSection from "./ContactFormSection";
 import FeatureRowSection from "./FeatureRowSection";
 import HeroSection from "./HeroSection";
 import ImageTextSection from "./ImageTextSection";
@@ -42,6 +43,10 @@ function readTemplateName(section: any) {
     return "multi_item_testimonial";
   }
 
+  if (type.endsWith("Contact_form")) {
+    return "contact_form";
+  }
+
   if (type.endsWith("Multi_use_banner")) {
     return "multi_use_banner";
   }
@@ -78,6 +83,10 @@ export default function SectionRenderer({ sections }: SectionRendererProps) {
 
         if (template === "multi_item_testimonial") {
           return <TestimonialSection key={key} section={section} />;
+        }
+
+        if (template === "contact_form") {
+          return <ContactFormSection key={key} section={section} />;
         }
 
         if (template === "multi_use_banner") {

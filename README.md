@@ -1,3 +1,38 @@
+# An Agentic CMS for RoosterGrin
+
+## The Vision
+
+What if agents could update website content the same way developers push code? No WordPress logins, no manual ACF edits, no bottlenecks. Just a prompt, a file write, and a Git commit.
+
+TinaCMS running locally with Git as the backend is the closest thing to that today.
+
+https://github.com/Gordoburrito/tina-barebones-starter
+
+## Why Git-Local is the Only Way
+
+For agents to work reliably on content, they need direct file access. Git-native storage makes that possible:
+
+- Content is just JSON/Markdown files — any agent with file access can read and write them
+- Changes are commits — every update is auditable and reversible
+- Runs locally in Node.js — no PHP, no remote database, no credentials to manage
+- The admin UI auto-generates from schema — add a component in code, it's immediately editable in the UI
+
+## What This Looks Like in Practice
+
+An agent receives a request, finds the right content file, makes the update, and commits it. The same workflow that takes a human several minutes in WordPress takes an agent seconds — and scales across hundreds of sites.
+
+A Codex or Claude Code agent could build a new component from a Figma design, wire up the TinaCMS schema, and make it content-editable in one shot.
+
+## The Bigger Opportunity
+
+Beyond internal agent workflows, TinaCMS could replace WordPress as the client-facing CMS entirely. Clients get a clean, purpose-built editing UI instead of navigating WordPress. We control the schema, the components, and the experience. No plugin bloat, no security surface, no ACF workarounds — just a content editor backed by Git that both humans and agents can use.
+
+## The Honest Tradeoff
+
+WordPress isn't going anywhere for legacy sites, and client familiarity is real. This isn't a rip-and-replace strategy — it's a starting point for new builds where we own the full stack and agent access matters most.
+
+---
+
 This is a [Tina CMS](https://tina.io/) project.
 
 ## Local Development

@@ -1,0 +1,250 @@
+.contactForm
+  background-color: #f1f1f1
+  padding: 7rem 0
+  position: relative
+
+.contactForm__container
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  max-width: 1344px
+  padding: 0 16px
+  position: relative
+  width: 100%
+
+.contactForm__contentColumn
+  margin-left: 8.33333%
+  padding: 0 16px
+  width: 33.33333%
+
+.contactForm__formColumn
+  margin-left: 8.33333%
+  padding: 0 16px
+  width: 41.66667%
+
+.contactForm__title
+  color: var(--color-text)
+  font-family: var(--font-heading), var(--font-heading-fallback), sans-serif
+  font-size: 4.125rem
+  font-weight: 800
+  line-height: 1.05
+  margin: 0
+
+.contactForm__line
+  background-color: var(--color-primary)
+  height: 4px
+  margin-top: 1.75rem
+  width: 8rem
+
+.contactForm__intro
+  margin: 2.5rem 0 0
+  max-width: 26rem
+
+.contactForm__form
+  margin: 0
+  width: 100%
+
+.contactForm__fields
+  column-gap: 2rem
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  row-gap: 1.5rem
+  width: 100%
+
+.contactForm__fieldWrap
+  min-width: 0
+
+.contactForm__fieldWrapFull
+  grid-column: 1 / -1
+
+.contactForm__fieldWrapHalf
+  grid-column: span 1
+
+.contactForm__input,
+.contactForm__textarea
+  background-color: transparent
+  border: 1px solid #bcbcbc
+  border-radius: 0
+  color: var(--color-text)
+  display: block
+  font-family: var(--font-body), var(--font-body-fallback), sans-serif
+  font-size: 1rem
+  letter-spacing: 0.02em
+  line-height: 1.4
+  padding: 0.94rem 1rem
+  width: 100%
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease
+
+.contactForm__textarea
+  min-height: 9.25rem
+  resize: vertical
+
+.contactForm__input::placeholder,
+.contactForm__textarea::placeholder
+  color: #2e2e2e
+  opacity: 0.9
+
+.contactForm__input:focus-visible,
+.contactForm__textarea:focus-visible
+  background-color: #fff
+  border-color: var(--color-primary)
+  box-shadow: 0 0 0 2px rgba(39, 128, 167, 0.12)
+  outline: 0
+
+.contactForm__legend
+  color: var(--color-text)
+  font-family: var(--font-body), var(--font-body-fallback), sans-serif
+  font-size: 1.125rem
+  letter-spacing: 0.02em
+  line-height: 1.4
+  margin-bottom: 0.75rem
+  padding: 0
+
+.contactForm__checkboxGroup
+  display: flex
+  flex-wrap: wrap
+  gap: 0.875rem 2rem
+
+.contactForm__checkboxLabel
+  align-items: center
+  cursor: pointer
+  display: inline-flex
+  gap: 0.75rem
+  line-height: 1.2
+
+.contactForm__checkbox
+  accent-color: var(--color-primary)
+  border: 1px solid #bcbcbc
+  border-radius: 0
+  flex: 0 0 auto
+  height: 1.625rem
+  margin: 0
+  width: 1.625rem
+  transition: border-color 0.2s ease, box-shadow 0.2s ease
+
+.contactForm__checkbox:focus-visible
+  box-shadow: 0 0 0 2px rgba(39, 128, 167, 0.12)
+
+.contactForm__checkboxText
+  color: var(--color-text)
+  font-size: 1.125rem
+
+.contactForm__consentLabel
+  align-items: flex-start
+  cursor: pointer
+  display: flex
+  gap: 0.75rem
+
+.contactForm__consentText
+  font-size: 1.0625rem
+  line-height: 1.55
+  margin-top: 0.0625rem
+
+.contactForm__submitWrap
+  margin-top: 2.25rem
+
+.contactForm__submit
+  background: transparent
+  border: 2px solid var(--color-primary)
+  border-radius: 0
+  color: var(--color-text)
+  cursor: pointer
+  display: inline-flex
+  font-family: var(--font-heading), var(--font-heading-fallback), sans-serif
+  font-size: 1.875rem
+  font-weight: 700
+  letter-spacing: 0.02em
+  line-height: 1
+  padding: 1rem 2rem
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease
+
+.contactForm__submit:hover
+  background-color: var(--color-primary)
+  color: #fff
+
+.contactForm__submit:focus-visible
+  background-color: var(--color-primary)
+  color: #fff
+
+.contactForm__visuallyHidden
+  border: 0
+  clip: rect(0 0 0 0)
+  clip-path: inset(50%)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  white-space: nowrap
+  width: 1px
+
+@media screen and (min-width: 1600px)
+  .contactForm
+    padding: 8rem 0
+
+  .contactForm__container
+    max-width: 1536px
+
+  .contactForm__title
+    font-size: 4.5rem
+
+@media screen and (max-width: 1280px)
+  .contactForm__title
+    font-size: 3.75rem
+
+@media screen and (max-width: 1024px)
+  .contactForm
+    padding: 4rem 0
+
+  .contactForm__contentColumn
+    margin-left: 0
+    width: 41.66667%
+
+  .contactForm__formColumn
+    margin-left: 0
+    width: 58.33333%
+
+  .contactForm__title
+    font-size: 3.125rem
+
+@media screen and (max-width: 768px)
+  .contactForm
+    padding: 3rem 0
+
+  .contactForm__container
+    padding: 0 2rem
+
+  .contactForm__contentColumn,
+  .contactForm__formColumn
+    margin-left: 0
+    padding: 0
+    width: 100%
+
+  .contactForm__formColumn
+    margin-top: 2.5rem
+
+@media screen and (max-width: 600px)
+  .contactForm__title
+    font-size: 2.8125rem
+
+  .contactForm__fields
+    column-gap: 0
+    grid-template-columns: 1fr
+
+  .contactForm__fieldWrapHalf
+    grid-column: 1 / -1
+
+@media screen and (max-width: 480px)
+  .contactForm__container
+    padding: 0 1rem
+
+@media screen and (max-width: 360px)
+  .contactForm__title
+    font-size: 13vw
+
+@media (prefers-reduced-motion: reduce)
+  .contactForm__input,
+  .contactForm__textarea,
+  .contactForm__checkbox,
+  .contactForm__submit
+    transition: none
