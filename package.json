@@ -14,7 +14,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.97.3",
-    "tinacms": "^3.4.1",
+    "tinacms": "^3.5.0",
     "typescript": "5.5.2"
   },
   "devDependencies": {
